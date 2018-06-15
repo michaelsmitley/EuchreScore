@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.example.android.euchrescore.ScoringActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hdgradientgreen1" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="232dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/euchrenightlogo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:orientation="vertical"
+        android:padding="@dimen/outside_padding">
+
+        <EditText
+            android:id="@+id/enterPlayerOne"
+            style="@style/player_entry_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/player_name_entry_bottom_margin"
+            android:hint="@string/enter_player_one"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/enterPlayerTwo"
+            style="@style/player_entry_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/player_name_entry_bottom_margin"
+            android:hint="@string/enter_player_two"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/enterPlayerThree"
+            style="@style/player_entry_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/player_name_entry_bottom_margin"
+            android:hint="@string/enter_player_three"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/enterPlayerFour"
+            style="@style/player_entry_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_player_four"
+            android:inputType="text" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/new_game_button"
+        android:onClick="startGame"
+        android:padding="16dp"
+        android:text="@string/start_game"
+        android:textSize="16sp" />
+
+</RelativeLayout>

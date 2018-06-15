@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    tools:context="com.example.android.euchrescore.ScoringActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/hdgradientgreen1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/score_us"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_corners"
+                android:fontFamily="@font/cards"
+                android:text="@string/default_card"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/card_text_size" />
+
+            <TextView
+                android:id="@+id/player_one_name"
+                style="@style/player_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textSize="@dimen/player_name_text_size" />
+
+            <TextView
+                style="@style/player_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-12dp"
+                android:layout_marginTop="-12dp"
+                android:text="and"
+                android:textSize="@dimen/player_and_size" />
+
+            <TextView
+                android:id="@+id/player_two_name"
+                style="@style/player_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/player_name_text_size" />
+
+            <Button
+                android:id="@+id/UsLonerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:onClick="addFourForUs"
+                android:text="@string/loner" />
+
+            <Button
+                android:id="@+id/UsSetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:onClick="addTwoForUs"
+                android:text="@string/set" />
+
+            <Button
+                android:id="@+id/UsAllTricksButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:onClick="addTwoForUs"
+                android:text="@string/all_tricks" />
+
+            <Button
+                android:id="@+id/UsWinHandButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:onClick="addOneForUs"
+                android:text="@string/win_hand" />
+
+            <Button
+                android:id="@+id/UsUndoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="subtractOneFromUs"
+                android:text="@string/undo" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/score_them"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_corners"
+                android:fontFamily="@font/cards"
+                android:text="@string/default_card"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="@dimen/card_text_size" />
+
+            <TextView
+                android:id="@+id/player_three_name"
+                style="@style/player_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text=""
+                android:textSize="@dimen/player_name_text_size" />
+
+            <TextView
+                style="@style/player_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-12dp"
+                android:layout_marginTop="-12dp"
+                android:text="and"
+                android:textSize="@dimen/player_and_size" />
+
+            <TextView
+                android:id="@+id/player_four_name"
+                style="@style/player_name_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/player_name_text_size" />
+
+            <Button
+                android:id="@+id/ThemLonerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:onClick="addFourForThem"
+                android:text="@string/loner" />
+
+            <Button
+                android:id="@+id/ThemSetButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:onClick="addTwoForThem"
+                android:text="@string/set" />
+
+            <Button
+                android:id="@+id/ThemAllTricksButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:onClick="addTwoForThem"
+                android:text="@string/all_tricks" />
+
+            <Button
+                android:id="@+id/ThemWinHandButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/button_bottom_margin"
+                android:onClick="addOneForThem"
+                android:text="@string/win_hand" />
+
+            <Button
+                android:id="@+id/ThemUndoButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="subtractOneFromThem"
+                android:text="@string/undo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/new_game_button"
+        android:onClick="gameOver"
+        android:padding="16dp"
+        android:text="@string/new_game"
+        android:textSize="16sp" />
+
+</RelativeLayout>

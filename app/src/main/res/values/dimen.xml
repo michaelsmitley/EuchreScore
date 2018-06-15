@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_text_size">120sp</dimen>
+    <dimen name="outside_padding">16dp</dimen>
+    <dimen name="player_name_entry_bottom_margin">16dp</dimen>
+    <dimen name="player_name_text_size">24sp</dimen>
+    <dimen name="player_and_size">20sp</dimen>
+    <dimen name="button_bottom_margin">8dp</dimen>
+</resources>

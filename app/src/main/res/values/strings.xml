@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Euchre Night</string>
+    <string name="default_card">\?</string>
+    <string name="loner">Loner +4</string>
+    <string name="set">Set +2</string>
+    <string name="all_tricks">All Tricks +2</string>
+    <string name="win_hand">Win Hand +1</string>
+    <string name="undo">Undo -1</string>
+    <string name="new_game">New Game</string>
+    <string name="start_game">Begin Game</string>
+    <string name="enter_player_one">Player One\'s Name</string>
+    <string name="enter_player_two">Player One\'s Partner\'s Name</string>
+    <string name="enter_player_three">Player Three\'s Name</string>
+    <string name="enter_player_four">Player Three\'s Partner\'s Name</string>
+
+</resources>
